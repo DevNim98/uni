@@ -23,7 +23,7 @@ int main(int argc, char const *argv[])
         }
     }
 
-    start = std::chrono::system_clock::now(); 
+    start = std::chrono::system_clock::now();
     for (int i = 0; i < m; i++)
     {
         for (int j = 0; j < m; j++)
@@ -34,11 +34,12 @@ int main(int argc, char const *argv[])
             }
         }
     }
+    end = std::chrono::system_clock::now();
 
     std::chrono::duration<double> elapsed_seconds = end - start; 
     std::time_t end_time = std::chrono::system_clock::to_time_t(end); 
   
-    std::cout << "elapsed time: " << elapsed_seconds.count() << "s\n"; 
+    std::cout << "elapsed time: " << elapsed_seconds.count() << "s\n";
 
     return 0;
 }

@@ -45,6 +45,7 @@ int main(int argc, char const *argv[])
             }
         }
     }
+    end = std::chrono::system_clock::now();
 
     std::chrono::duration<double> elapsed_seconds = end - start; 
     std::time_t end_time = std::chrono::system_clock::to_time_t(end); 
